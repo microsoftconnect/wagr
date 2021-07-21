@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		330FE224260392180056695F /* MAMPolicyDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 330FE223260392180056695F /* MAMPolicyDelegate.m */; };
+		338215042614D86A00FA8CE0 /* UIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 338215032614D86A00FA8CE0 /* UIUtil.m */; };
+		338215072614F6B800FA8CE0 /* MAMComplianceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 338215062614F6B800FA8CE0 /* MAMComplianceDelegate.m */; };
+		3382150A2614F75100FA8CE0 /* MAMEnrollmentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 338215092614F75100FA8CE0 /* MAMEnrollmentDelegate.m */; };
+		3382151226175BA200FA8CE0 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3382151126175BA200FA8CE0 /* NetworkExtension.framework */; };
+		33A3AF8D26989F3600F4B60A /* IntuneMAMSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3351762F261F7DFD0036837C /* IntuneMAMSwift.xcframework */; };
+		33A3AF8E26989F3600F4B60A /* IntuneMAMSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3351762F261F7DFD0036837C /* IntuneMAMSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33A3AF8F26989F3600F4B60A /* IntuneMAMSwiftStub.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33517632261F7E060036837C /* IntuneMAMSwiftStub.xcframework */; };
+		33A3AF9026989F3600F4B60A /* IntuneMAMSwiftStub.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33517632261F7E060036837C /* IntuneMAMSwiftStub.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33A3AF9126989F3600F4B60A /* MSAL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335252E4260A5B190023E63C /* MSAL.xcframework */; };
+		33A3AF9226989F3600F4B60A /* MSAL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 335252E4260A5B190023E63C /* MSAL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33D2C62B25ED7234000CC4D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D2C62A25ED7234000CC4D4 /* AppDelegate.m */; };
+		33D2C63125ED7234000CC4D4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D2C63025ED7234000CC4D4 /* LoginViewController.m */; };
+		33D2C63425ED7234000CC4D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D2C63225ED7234000CC4D4 /* Main.storyboard */; };
+		33D2C63625ED7235000CC4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D2C63525ED7235000CC4D4 /* Assets.xcassets */; };
+		33D2C63925ED7235000CC4D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D2C63725ED7235000CC4D4 /* LaunchScreen.storyboard */; };
+		33D2C63C25ED7235000CC4D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D2C63B25ED7235000CC4D4 /* main.m */; };
+		33D2C66B25ED72BC000CC4D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D2C66A25ED72BC000CC4D4 /* Images.xcassets */; };
+		33D3E7E425EDABBD00A6A16E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D3E7E325EDABBD00A6A16E /* SettingsViewController.m */; };
+		33FD4A9A25EFB55000CAA486 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FD4A9925EFB55000CAA486 /* MessageUI.framework */; };
+		33FD4A9C25EFB55900CAA486 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FD4A9B25EFB55900CAA486 /* Security.framework */; };
+		33FD4A9E25EFB55F00CAA486 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FD4A9D25EFB55F00CAA486 /* CoreServices.framework */; };
+		33FD4AA025EFB56700CAA486 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FD4A9F25EFB56700CAA486 /* SystemConfiguration.framework */; };
+		33FD4AA425EFB58200CAA486 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FD4AA325EFB58200CAA486 /* ImageIO.framework */; };
+		33FD4AA625EFB58C00CAA486 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FD4AA525EFB58C00CAA486 /* LocalAuthentication.framework */; };
+		33FD4AA825EFB59400CAA486 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FD4AA725EFB59400CAA486 /* AudioToolbox.framework */; };
+		33FD4AAA25EFB59C00CAA486 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FD4AA925EFB59C00CAA486 /* QuartzCore.framework */; };
+		33FD4AAC25EFB5A200CAA486 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FD4AAB25EFB5A200CAA486 /* WebKit.framework */; };
+		33FD4C9325F032EC00CAA486 /* DateUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FD4C9225F032EC00CAA486 /* DateUtility.m */; };
+		33FD4C9525F0333800CAA486 /* UserData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33FD4C9425F0333800CAA486 /* UserData.plist */; };
+		33FD4C9825F0335900CAA486 /* CalendarData.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FD4C9725F0335900CAA486 /* CalendarData.m */; };
+		33FD4C9B25F034A300CAA486 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FD4C9A25F034A300CAA486 /* TimerViewController.m */; };
+		33FD4D3725F1400B00CAA486 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FD4D3625F1400B00CAA486 /* DataViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		33A3AF9326989F3600F4B60A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33A3AF9226989F3600F4B60A /* MSAL.xcframework in Embed Frameworks */,
+				33A3AF9026989F3600F4B60A /* IntuneMAMSwiftStub.xcframework in Embed Frameworks */,
+				33A3AF8E26989F3600F4B60A /* IntuneMAMSwift.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		330FE222260392170056695F /* MAMPolicyDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAMPolicyDelegate.h; sourceTree = "<group>"; };
+		330FE223260392180056695F /* MAMPolicyDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAMPolicyDelegate.m; sourceTree = "<group>"; };
+		331C6250264EF82800BB3AC0 /* WagrRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WagrRelease.entitlements; sourceTree = "<group>"; };
+		3351762F261F7DFD0036837C /* IntuneMAMSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IntuneMAMSwift.xcframework; sourceTree = "<group>"; };
+		33517632261F7E060036837C /* IntuneMAMSwiftStub.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IntuneMAMSwiftStub.xcframework; sourceTree = "<group>"; };
+		335252E4260A5B190023E63C /* MSAL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MSAL.xcframework; sourceTree = "<group>"; };
+		338215022614D86A00FA8CE0 /* UIUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIUtil.h; sourceTree = "<group>"; };
+		338215032614D86A00FA8CE0 /* UIUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIUtil.m; sourceTree = "<group>"; };
+		338215052614F6B800FA8CE0 /* MAMComplianceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAMComplianceDelegate.h; sourceTree = "<group>"; };
+		338215062614F6B800FA8CE0 /* MAMComplianceDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAMComplianceDelegate.m; sourceTree = "<group>"; };
+		338215082614F75000FA8CE0 /* MAMEnrollmentDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAMEnrollmentDelegate.h; sourceTree = "<group>"; };
+		338215092614F75100FA8CE0 /* MAMEnrollmentDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAMEnrollmentDelegate.m; sourceTree = "<group>"; };
+		3382151126175BA200FA8CE0 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		33ACBAA125EE844A0080076F /* Wagr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wagr.entitlements; sourceTree = "<group>"; };
+		33D2C62625ED7234000CC4D4 /* Wagr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wagr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D2C62925ED7234000CC4D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33D2C62A25ED7234000CC4D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33D2C62F25ED7234000CC4D4 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		33D2C63025ED7234000CC4D4 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		33D2C63325ED7234000CC4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33D2C63525ED7235000CC4D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33D2C63825ED7235000CC4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33D2C63A25ED7235000CC4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D2C63B25ED7235000CC4D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33D2C66A25ED72BC000CC4D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		33D3E7E225EDABBD00A6A16E /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		33D3E7E325EDABBD00A6A16E /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		33FD4A9925EFB55000CAA486 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		33FD4A9B25EFB55900CAA486 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		33FD4A9D25EFB55F00CAA486 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		33FD4A9F25EFB56700CAA486 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		33FD4AA125EFB57000CAA486 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		33FD4AA225EFB57A00CAA486 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		33FD4AA325EFB58200CAA486 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		33FD4AA525EFB58C00CAA486 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		33FD4AA725EFB59400CAA486 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		33FD4AA925EFB59C00CAA486 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		33FD4AAB25EFB5A200CAA486 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		33FD4C9125F032EC00CAA486 /* DateUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateUtility.h; sourceTree = "<group>"; };
+		33FD4C9225F032EC00CAA486 /* DateUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateUtility.m; sourceTree = "<group>"; };
+		33FD4C9425F0333800CAA486 /* UserData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserData.plist; sourceTree = "<group>"; };
+		33FD4C9625F0335900CAA486 /* CalendarData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarData.h; sourceTree = "<group>"; };
+		33FD4C9725F0335900CAA486 /* CalendarData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarData.m; sourceTree = "<group>"; };
+		33FD4C9925F034A300CAA486 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		33FD4C9A25F034A300CAA486 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		33FD4D3525F1400B00CAA486 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		33FD4D3625F1400B00CAA486 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33D2C62325ED7234000CC4D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A3AF8D26989F3600F4B60A /* IntuneMAMSwift.xcframework in Frameworks */,
+				3382151226175BA200FA8CE0 /* NetworkExtension.framework in Frameworks */,
+				33FD4AA425EFB58200CAA486 /* ImageIO.framework in Frameworks */,
+				33FD4AA625EFB58C00CAA486 /* LocalAuthentication.framework in Frameworks */,
+				33FD4AAC25EFB5A200CAA486 /* WebKit.framework in Frameworks */,
+				33FD4AAA25EFB59C00CAA486 /* QuartzCore.framework in Frameworks */,
+				33FD4AA025EFB56700CAA486 /* SystemConfiguration.framework in Frameworks */,
+				33FD4A9E25EFB55F00CAA486 /* CoreServices.framework in Frameworks */,
+				33FD4A9C25EFB55900CAA486 /* Security.framework in Frameworks */,
+				33FD4AA825EFB59400CAA486 /* AudioToolbox.framework in Frameworks */,
+				33A3AF8F26989F3600F4B60A /* IntuneMAMSwiftStub.xcframework in Frameworks */,
+				33A3AF9126989F3600F4B60A /* MSAL.xcframework in Frameworks */,
+				33FD4A9A25EFB55000CAA486 /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		338213F12613807600FA8CE0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				338215012614C27400FA8CE0 /* Common */,
+				338213FB261388A500FA8CE0 /* Assets */,
+				338213F92613887B00FA8CE0 /* Storyboards */,
+				338213F72613882D00FA8CE0 /* SettingsTab */,
+				338213F6261387FF00FA8CE0 /* Delegates */,
+				338213F52613856C00FA8CE0 /* DataTab */,
+				338213F42613839B00FA8CE0 /* TimerTab */,
+				338213F32613838400FA8CE0 /* Login */,
+				338213F22613808E00FA8CE0 /* Main */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		338213F22613808E00FA8CE0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				33D2C62925ED7234000CC4D4 /* AppDelegate.h */,
+				33D2C62A25ED7234000CC4D4 /* AppDelegate.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		338213F32613838400FA8CE0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				33D2C62F25ED7234000CC4D4 /* LoginViewController.h */,
+				33D2C63025ED7234000CC4D4 /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		338213F42613839B00FA8CE0 /* TimerTab */ = {
+			isa = PBXGroup;
+			children = (
+				33FD4C9925F034A300CAA486 /* TimerViewController.h */,
+				33FD4C9A25F034A300CAA486 /* TimerViewController.m */,
+			);
+			path = TimerTab;
+			sourceTree = "<group>";
+		};
+		338213F52613856C00FA8CE0 /* DataTab */ = {
+			isa = PBXGroup;
+			children = (
+				33FD4C9125F032EC00CAA486 /* DateUtility.h */,
+				33FD4C9225F032EC00CAA486 /* DateUtility.m */,
+				33FD4C9425F0333800CAA486 /* UserData.plist */,
+				33FD4C9625F0335900CAA486 /* CalendarData.h */,
+				33FD4C9725F0335900CAA486 /* CalendarData.m */,
+				33FD4D3525F1400B00CAA486 /* DataViewController.h */,
+				33FD4D3625F1400B00CAA486 /* DataViewController.m */,
+			);
+			path = DataTab;
+			sourceTree = "<group>";
+		};
+		338213F6261387FF00FA8CE0 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				338215082614F75000FA8CE0 /* MAMEnrollmentDelegate.h */,
+				338215092614F75100FA8CE0 /* MAMEnrollmentDelegate.m */,
+				330FE222260392170056695F /* MAMPolicyDelegate.h */,
+				330FE223260392180056695F /* MAMPolicyDelegate.m */,
+				338215052614F6B800FA8CE0 /* MAMComplianceDelegate.h */,
+				338215062614F6B800FA8CE0 /* MAMComplianceDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		338213F72613882D00FA8CE0 /* SettingsTab */ = {
+			isa = PBXGroup;
+			children = (
+				33D3E7E225EDABBD00A6A16E /* SettingsViewController.h */,
+				33D3E7E325EDABBD00A6A16E /* SettingsViewController.m */,
+			);
+			path = SettingsTab;
+			sourceTree = "<group>";
+		};
+		338213F92613887B00FA8CE0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				33D2C63225ED7234000CC4D4 /* Main.storyboard */,
+				33D2C63725ED7235000CC4D4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		338213FB261388A500FA8CE0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				33D2C66A25ED72BC000CC4D4 /* Images.xcassets */,
+				33D2C63525ED7235000CC4D4 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		338215012614C27400FA8CE0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				338215022614D86A00FA8CE0 /* UIUtil.h */,
+				338215032614D86A00FA8CE0 /* UIUtil.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		33D2C61D25ED7233000CC4D4 = {
+			isa = PBXGroup;
+			children = (
+				33D2C62825ED7234000CC4D4 /* Wagr */,
+				33D2C62725ED7234000CC4D4 /* Products */,
+				6FF62D9498599685F04C1D14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33D2C62725ED7234000CC4D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33D2C62625ED7234000CC4D4 /* Wagr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33D2C62825ED7234000CC4D4 /* Wagr */ = {
+			isa = PBXGroup;
+			children = (
+				331C6250264EF82800BB3AC0 /* WagrRelease.entitlements */,
+				33ACBAA125EE844A0080076F /* Wagr.entitlements */,
+				33D2C63A25ED7235000CC4D4 /* Info.plist */,
+				33D2C63B25ED7235000CC4D4 /* main.m */,
+				338213F12613807600FA8CE0 /* Application */,
+			);
+			path = Wagr;
+			sourceTree = "<group>";
+		};
+		6FF62D9498599685F04C1D14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33517632261F7E060036837C /* IntuneMAMSwiftStub.xcframework */,
+				3351762F261F7DFD0036837C /* IntuneMAMSwift.xcframework */,
+				3382151126175BA200FA8CE0 /* NetworkExtension.framework */,
+				335252E4260A5B190023E63C /* MSAL.xcframework */,
+				33FD4AAB25EFB5A200CAA486 /* WebKit.framework */,
+				33FD4AA925EFB59C00CAA486 /* QuartzCore.framework */,
+				33FD4AA725EFB59400CAA486 /* AudioToolbox.framework */,
+				33FD4AA525EFB58C00CAA486 /* LocalAuthentication.framework */,
+				33FD4AA325EFB58200CAA486 /* ImageIO.framework */,
+				33FD4AA225EFB57A00CAA486 /* libc++.tbd */,
+				33FD4AA125EFB57000CAA486 /* libsqlite3.tbd */,
+				33FD4A9F25EFB56700CAA486 /* SystemConfiguration.framework */,
+				33FD4A9D25EFB55F00CAA486 /* CoreServices.framework */,
+				33FD4A9B25EFB55900CAA486 /* Security.framework */,
+				33FD4A9925EFB55000CAA486 /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33D2C62525ED7234000CC4D4 /* Wagr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D2C65525ED7236000CC4D4 /* Build configuration list for PBXNativeTarget "Wagr" */;
+			buildPhases = (
+				33D2C62225ED7234000CC4D4 /* Sources */,
+				33D2C62325ED7234000CC4D4 /* Frameworks */,
+				33D2C62425ED7234000CC4D4 /* Resources */,
+				33A3AF9326989F3600F4B60A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wagr;
+			productName = Wagr;
+			productReference = 33D2C62625ED7234000CC4D4 /* Wagr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33D2C61E25ED7233000CC4D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					33D2C62525ED7234000CC4D4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 33D2C62125ED7233000CC4D4 /* Build configuration list for PBXProject "Wagr" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33D2C61D25ED7233000CC4D4;
+			productRefGroup = 33D2C62725ED7234000CC4D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33D2C62525ED7234000CC4D4 /* Wagr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33D2C62425ED7234000CC4D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D2C63925ED7235000CC4D4 /* LaunchScreen.storyboard in Resources */,
+				33D2C66B25ED72BC000CC4D4 /* Images.xcassets in Resources */,
+				33D2C63625ED7235000CC4D4 /* Assets.xcassets in Resources */,
+				33D2C63425ED7234000CC4D4 /* Main.storyboard in Resources */,
+				33FD4C9525F0333800CAA486 /* UserData.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33D2C62225ED7234000CC4D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D2C63125ED7234000CC4D4 /* LoginViewController.m in Sources */,
+				33D2C62B25ED7234000CC4D4 /* AppDelegate.m in Sources */,
+				33D3E7E425EDABBD00A6A16E /* SettingsViewController.m in Sources */,
+				33FD4C9B25F034A300CAA486 /* TimerViewController.m in Sources */,
+				33FD4C9325F032EC00CAA486 /* DateUtility.m in Sources */,
+				338215042614D86A00FA8CE0 /* UIUtil.m in Sources */,
+				33D2C63C25ED7235000CC4D4 /* main.m in Sources */,
+				33FD4C9825F0335900CAA486 /* CalendarData.m in Sources */,
+				3382150A2614F75100FA8CE0 /* MAMEnrollmentDelegate.m in Sources */,
+				330FE224260392180056695F /* MAMPolicyDelegate.m in Sources */,
+				338215072614F6B800FA8CE0 /* MAMComplianceDelegate.m in Sources */,
+				33FD4D3725F1400B00CAA486 /* DataViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33D2C63225ED7234000CC4D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33D2C63325ED7234000CC4D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33D2C63725ED7235000CC4D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33D2C63825ED7235000CC4D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33D2C65325ED7236000CC4D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRIP_SWIFT_SYMBOLS = NO;
+			};
+			name = Debug;
+		};
+		33D2C65425ED7236000CC4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRIP_SWIFT_SYMBOLS = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33D2C65625ED7236000CC4D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_ENTITLEMENTS = Wagr/Wagr.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBF8T346G9;
+				ENABLE_BITCODE = NO;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				INFOPLIST_FILE = Wagr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.wagr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33D2C65725ED7236000CC4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_ENTITLEMENTS = Wagr/WagrRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBF8T346G9;
+				ENABLE_BITCODE = NO;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				INFOPLIST_FILE = Wagr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.wagr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33D2C62125ED7233000CC4D4 /* Build configuration list for PBXProject "Wagr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D2C65325ED7236000CC4D4 /* Debug */,
+				33D2C65425ED7236000CC4D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D2C65525ED7236000CC4D4 /* Build configuration list for PBXNativeTarget "Wagr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D2C65625ED7236000CC4D4 /* Debug */,
+				33D2C65725ED7236000CC4D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33D2C61E25ED7233000CC4D4 /* Project object */;
+}
